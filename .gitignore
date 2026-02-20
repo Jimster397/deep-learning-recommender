@@ -1,3 +1,27 @@
+# ===== PROJECT SPECIFIC =====
+
+# Data files (too large for GitHub - download using src/data/download_data.py)
+data/ml-25m/
+data/*.zip
+data/*.csv
+
+# Keep the data directory structure
+!data/.gitkeep
+
+# Model artifacts (trained models can be large)
+*.pkl
+*.pth
+*.h5
+*.ckpt
+
+# MLflow tracking
+mlruns/
+mlartifacts/
+
+# Experiment outputs
+outputs/
+checkpoints/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
